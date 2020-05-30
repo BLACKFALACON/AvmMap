@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html >
+<head>
+ <title>Mekanlar</title>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="js/script.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link href="css/font-awesome.css" rel="stylesheet">  
+
+ </head>
+
+<body onload="filterSelection('all')">
+    <div id="home" class="inner-w3pvt-page">
+        <div class="overlay-innerpage">
+            <div class="top_w3pvt_main container">
+                <header class="nav_w3pvt text-center ">
+                <nav class="wthree-w3ls">
+                    <div id="logo">
+                     <h1> <a class="navbar-brand px-0 mx-0" href="index.html"><span class="fas fa-map-signs text-warning"></span> MekΛnla</a></h1>
+                    </div>
+                    <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu mr-auto">
+                        <li ><a href="index.html">Anasayfa</a></li>
+                        <li ><a href="avmler.html">avmler</a></li> 
+                         <li><a href="magzalar.html">Mağzalar</a></li>                             
+                    </ul>
+                </nav>
+            </header>
+                <!--/breadcrumb-->
+                <div class="inner-w3pvt-page-info">
+                    <ol class="breadcrumb d-flex">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Anasayfa</a>
+                        </li>
+                         <li class="breadcrumb-item">
+                            <a href="mekanlar.html">Avmler</a>
+                        </li>
+                        <li class="breadcrumb-item active">Marmara Forum</li>
+                    </ol>
+                </div>
+                <!--//breadcrumb-->
+            </div>
+        </div>
+    </div>
+<br><br>
+<div class="container">
+<div style="width:100%; ">
+
+<div class="row ">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"><img class="card-img-top" src="images/mrmr.png" style="width:100%;"></div>
+  <div class="col-sm-6"><h1 class="display-3 mt-4 ">Marmara Forum</h1></div>
+  <div class="col-sm-2"></div>
+</div>
+
+<div class="btn-group ">
+  <button id="defaultOpen" class="tablinks " onclick="openCity(event, 'menu')" >Mağzalar</button>
+  <button class="tablinks" onclick="openCity(event, 'foto')">Galeri</button>
+  <button class="tablinks " onclick="openCity(event, 'sube')">Bilgi</button>
+  <button class="tablinks " onclick="openCity(event, 'harita')">AVM Haritası</button>
+</div>
+
+
+<div id="harita" class="tabcontent container "> <!-- MENÜ1 BAŞLANGıç-->
+   <h6 class="display-4 mb-4 ml-3">AVM Haritası</h6>
+
+  <div class="tab01 button01 ">
+    <button class="tablinks01 button01" onclick="openCity01(event, 'London')" id="defaultOpen01">Zemin Kat</button>
+    <button class="tablinks01 button01" onclick="openCity01(event, 'Paris')">Kat 1</button>
+    <button class="tablinks01 button01" onclick="openCity01(event, 'Tokyo')">Kat 2</button>
+  </div>
+
+  <div id="London" class="tabcontent01">
+    <img src="https://i.imgur.com/yiWhR9p.png"style="width: 50%">
+  </div>
+
+  <div id="Paris" class="tabcontent01">
+   <img src="https://i.imgur.com/yiWhR9p.png"style="width: 50%">
+  </div>
+
+  <div id="Tokyo" class="tabcontent01">
+     <img src="images/mrmr.jpg" style="width: 50%">
+  </div>
+</div>
+
+
+<div id="menu" class="tabcontent container "> <!-- MENÜ1 BAŞLANGıç-->
+ <h6 class="display-4 mb-3 ml-3">Mağzalar</h6>
+ <br>
+  <ul class="nav nav-pills ml-4 justify-content-center altt" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active " data-toggle="pill" href="#menu1">Giyim </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">Kozmetik </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu3">Eğlence</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu3">Yemek</a>
+    </li>
+     <li class="nav-item">
+      <input type="text1" placeholder="Ara.." id="myInput" onkeyup="filterFunction()">
+    </li>  
+  </ul>
+
+
+  <div class="tab-content" >
+  <div id="myDropdown" >
+   <div id="menu1" class="container101 tab-pane active"><br> <!-- MENÜ 1-->
+    <div class="row">
+      <a  class="mini">
+    <div class="card text-white uruncerceve" >
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%">
+      <div class="card-body">
+        <h5 class="card-title mb-3 text-dark">Gözlük</h5>  
+         <i class="fas fa-phone mb-2"  style='font-size:15px;color:black;'> 0252 556 65 89</i>
+         <i class="fas fa-location-arrow" style='font-size:15px;color:black;'> Kat 2</i>
+      </div>  
+    </div></a>
+      <a  class="mini">
+    <div class="card text-white uruncerceve" >
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%">
+      <div class="card-body">
+        <h5 class="card-title mb-3 text-dark">Ayakabı</h5>  
+         <i class="fas fa-phone mb-2"  style='font-size:15px;color:black;'> 0252 556 65 89</i>
+            <i class="fas fa-location-arrow" style='font-size:15px;color:black;'> Kat 2</i>
+      </div>  
+    </div></a>
+    </div>
+   </div>
+   </div>
+
+  </div><!-- MENÜ son-->
+ </div>
+
+<div id="sube" class="container  tabcontent" > <!-- SUBE BAŞLANGıç-->
+ <h6 class="display-4 mb-3 ml-3">Bilgi</h6>
+
+   <div class="row">
+   <div class="col-sm-6">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24084.128172599827!2d28.876044359723416!3d41.013965175195395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb081d9317d1%3A0xba800c81534b7bfc!2sHakan+Tekstil!5e0!3m2!1str!2str!4v1545233030472" frameborder="0" style="width:90%;"></iframe>
+    <br>
+    <button type="button" class="btn btn-warning" style="width:90%">Yol Tarifi</button>
+   </div>
+   <div class="col-sm-2">
+    <b>Adres</b>
+    <p>Bebek Mahallesi, Cevdetpaşa Caddesi, No 30/A, Beşiktaş, İstanbul</p>
+    <b>Telefon</b>
+    <p>0212 2874363</p>
+   </div>
+
+    <div class="col-sm-2">
+    <b>Çalışma Saatleri</b>
+    <br>07:00 - 01:00 <i id="drm" style="font-size: 10px; cursor: pointer;"></i> <br><br><br>
+    <b>Web Sitesi</b>
+    <br>www.Starbucks.com
+   </div>
+   <div class="col-sm-2">
+    <b style="font-size: 15px;">Hizmetler</b>
+    <div class="row">
+    <p>    <i class="fas  fa-info-circle" style="color: black; font-size: 17px;"> </i> Atm<br>
+    <i class="fas  fa-info-circle" style="color: black; font-size: 17px;"> </i> Otopark <br>
+    <i class="fas f fa-info-circle" style="color: black; font-size: 17px;"> </i> Wifi<br>
+   </p>   
+   </div>
+   </div>
+
+   </div>  
+</div>
+
+<div id="foto" class="container  tabcontent"><!--------------------------------------------------------- GALERİ -->
+ <h6 class="display-4 mb-4 ml-3">Fotoğraf</h6>
+
+ <div class="tab-content">
+    <div id="glrall" class="container tab-pane active"><br>
+   <div class="rowimg">
+    <div class="columnimg">
+      <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+      <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+      <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+      <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadowimg cursorimg">
+    </div>
+     <div class="columnimg">
+      <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+      <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+      <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+      <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadowimg cursorimg">
+    </div>
+  </div>
+ 
+
+ <div id="myModal" class="modalimg">
+  <span class="closeimg cursorimg" onclick="closeModal()">&times;</span>
+  <div class="modal-contentimg">
+    
+    <div class="mySlidesimg">
+      <img src="images/img_nature.jpg" class="imgbytimg" >
+    </div>
+    <div class="mySlidesimg">
+      <img src="images/img_snow.jpg" class="imgbytimg" >
+    </div>
+    <div class="mySlidesimg">
+      <img src="images/img_mountains.jpg" class="imgbytimg" >
+    </div>  
+    <div class="mySlidesimg">
+    <img src="images/img_lights.jpg" class="imgbytimg" >
+    </div>
+     <div class="mySlidesimg">
+      <img src="images/img_nature.jpg" class="imgbytimg" >
+    </div>
+
+    <div class="mySlidesimg">
+      <img src="images/img_snow.jpg" class="imgbytimg" >
+    </div>
+
+    <div class="mySlidesimg">
+      <img src="images/img_mountains.jpg" class="imgbytimg" >
+    </div>  
+    <div class="mySlidesimg">
+    <img src="images/img_lights.jpg" class="imgbytimg" >
+    </div>
+    <a class="previmg" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="nextimg" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-containerimg">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="columnimg1 gizle ">
+      <img class="demoimg cursorimg" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1) " alt="Nature and sunrise">
+    </div>
+    <div class="columnimg1 gizle ">
+      <img class="demoimg cursorimg" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+  <div class="columnimg1 gizle">
+   <img class="demoimg cursorimg" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+    <div class="columnimg1 gizle">
+      <img class="demoimg cursorimg" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4) " alt="Northern Lights">
+    </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+
+ </div>
+</div>
+<script type="text/javascript">
+function openCity01(evt1, cityName1) {
+  var i, tabcontent01, tablinks01;
+  tabcontent01 = document.getElementsByClassName("tabcontent01");
+  for (i = 0; i < tabcontent01.length; i++) {
+    tabcontent01[i].style.display = "none";
+  }
+  tablinks01 = document.getElementsByClassName("tablinks01");
+  for (i = 0; i < tablinks01.length; i++) {
+    tablinks01[i].className = tablinks01[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName1).style.display = "block";
+  evt1.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen01").click();
+
+/* -------------------- ŞUBELER ------------------------------- */
+var coll = document.getElementsByClassName("collapsible");
+var i;
+var time=new Date().getHours();
+var durum;
+for (i = 0; i < coll.length; i++) 
+{
+  coll[i].addEventListener("click", 
+   function()
+   {
+    this.classList.toggle("act");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight)
+    {
+      content.style.maxHeight = null;
+    } 
+    else 
+    {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+if (time >7 &&  time <24)
+{
+ durum = "Şuan Açık";
+ document.getElementById('drm').style.color='green';
+}
+else
+{
+ durum = "Şuan Kapalı ";
+ document.getElementById('drm').style.color='red'
+}
+ document.getElementById("drm").innerHTML =durum;
+ 
+document.getElementById("defaultOpen").click();
+
+/* GALERİ */
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesimg");
+  var dots = document.getElementsByClassName("demoimg");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" activeimg", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " activeimg";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+<br><br><br>
+
+    <div class="copy_right p-1 d-flex">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-9 copy_w3pvt">
+                    <p class="text-lg-left text-center">© 2019 Mekanla. Tüm hakları saklıdır </p>
+                       
+                </div>
+
+                <div class="col-lg-3 move-top text-lg-right text-center">
+                    <a href="#home" class="move-top ">
+                        <span class="fa fa-angle-double-up mt-1   pr-2 pt-1 bg-warning rounded-circle " style="font-size: 30px;"  aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
